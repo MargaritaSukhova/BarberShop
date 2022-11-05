@@ -1,0 +1,102 @@
+:root {
+    --main-txt-clr: #555555;
+    --white-txt-clr: #FFFFFF;
+    --light-txt-clr: #9DA4BD;
+    --title-txt-clr: #303030;
+    --main-bg-clr: #FFFFFF;
+    --secondary-bg-clr: #F7F7F7;
+    --dark-bg-clr: #111319;
+    --footer-bg-clr: #191C26;
+    --accent-clr: #FF6C00;
+    --social-icon-fill: #303030;
+    --indent: 30px;
+    --items: 2;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 2px solid red;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background-color: var(--main-bg-clr);
+    color: var(--main-txt-clr);
+}
+
+/* Card set */
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+
+.card-set-item {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+}
+
+/* Reset*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+    border: 0;
+}
+
+/*About*/
+
+.about-container {
+    display: flex;
+
+}
